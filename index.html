@@ -1,0 +1,73 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <title>jQuery Ajax Image Upload Demo | jQuery4u</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+      <h1>jQuery Ajax Image Upload Demo</h1>
+  </header>
+
+  <div id="main" role="main">
+
+
+        <form method="post" id="upload-image-form">
+
+          <h2>Upload Image Form</h2>
+
+          <div class="cell">
+            <div class="row requiredRow">
+                <label id="image-upload-ariaLabel" for="picture">Select Image:</label> <input type="file" size="40" name="image-upload" id="image-upload"> <button id="remove-image-upload"><img src="img/cross.png" /> Remove</button>
+            </div>
+          </div>
+
+          <div class="cell">
+              <h2>Generated Image Thumbnail:</h2>
+              <div id="image_preview_wrap">
+                  <img class="loading" alt="loading..." src="img/loading.gif">
+                  <img alt="picture" src="img/350x150.jpg" id="image_preview">
+              </div>
+          </div>
+
+          <div class="cell">
+              <h2>Saved Original Image:</h2>
+              <div id="image_original_wrap">
+                  <img class="loading" alt="loading..." src="img/loading.gif">
+                  <img alt="The original uploaded image will appear here..." src="" id="image_original">
+              </div>
+          </div>
+
+
+          <div class="cell lastcell">
+             <input type="submit" value="Submit Form" class="submit-btn">
+          </div>
+
+        </form>
+
+  </div>
+  <footer>
+      Copyright jQuery4u 2012
+  </footer>
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery-ajax-image-upload.js"></script>
+
+
+</body>
+</html>
